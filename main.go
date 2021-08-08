@@ -32,6 +32,7 @@ func (tcf Block) Do() {
 }
  
 func main() {
+ 
     fmt.Println("We started")
     Block{
         Try: func() {
@@ -45,5 +46,6 @@ func main() {
             fmt.Println("Finally...")
         },
     }.Do()
+ 
     fmt.Println("We went on")
 }
